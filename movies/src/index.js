@@ -85,6 +85,8 @@ const sample = {
       name: "English",
     },
   ],
+
+  
   status: "Released",
   tagline: "Darkness rises... and light to meet it",
   title: "Star Wars: The Last Jedi",
