@@ -19,7 +19,7 @@
 // const rootElement = createRoot( document.getElementById("root") )
 // rootElement.render(<App />);
 
-
+import AddMovieReviewPage from './pages/addMovieReviewPage'
 import SiteHeader from './components/siteHeader'
 import MovieReviewPage from "./pages/movieReviewPage";
 import React from "react";
@@ -59,6 +59,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={ <Navigate to="/" /> } />
         <Route path="/movies/upcoming" element={<UpcomingPage />} />
+        <Route path="/reviews/form" element={ <AddMovieReviewPage /> } />
 
         </Routes>
         </MoviesContextProvider>
