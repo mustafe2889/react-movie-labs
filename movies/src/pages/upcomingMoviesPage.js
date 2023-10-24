@@ -5,7 +5,7 @@ import { useQuery } from "react-query";
 import Spinner from "../components/spinner";
 import AddToFavoritesIcon from "../components/cardIcons/addToFavorites";
 import PlaylistAddIcon from "../components/cardIcons/PlaylistAdd";
-
+import PlaylistAdd from "../components/cardIcons/PlaylistAdd";
 const UpcomingMoviesPage = (props) => {
   // const [upcomingMovies, setUpcomingMovies] = useState([]);
   const { data, error, isLoading, isError } = useQuery(
@@ -32,8 +32,9 @@ const UpcomingMoviesPage = (props) => {
       title="Upcoming Movies"
       movies={upcomingMovies}
       action={(movie) => {
-        return <PlaylistAddIcon movie={movie} />;      }}
-    />
+        return <PlaylistAdd movie={movie} />;
+    }}
+        />
   );
 };
 export default UpcomingMoviesPage;
